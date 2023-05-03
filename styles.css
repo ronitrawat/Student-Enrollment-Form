@@ -1,0 +1,52 @@
+:root {
+    --primary: rgb(79, 211, 138);
+  }
+  
+  .navbar-custom {
+    background-color: var(--primary);
+  }
+  
+  .footer-custom {
+    background-color: var(--primary);
+  }
+  
+  .border-cstart {
+    border: 0px solid var(--primary);
+    border-width: 0px 0px 0px 3px;
+  }
+  
+  .border-cend {
+    border: 0px solid var(--primary);
+    border-width: 0 3px 0 0;
+  }
+  
+  .border-cprimary {
+    border-color: var(--primary) !important;
+  }
+  
+  .cell-cprimary {
+    background-color: var(--primary);
+  }
+  
+  .record {
+    opacity: 0;
+    animation: fade-in 2s forwards;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .border-cstart {
+      border: none;
+    }
+    .border-cend {
+      border-width: 0 0 1px 0;
+    }
+  }
